@@ -14,7 +14,8 @@ type `sudo apt-get install hostapd udhcpd -y`
 you need to configure `/etc/udhcpd.conf`  
 ##1.  
 you should edit /etc/udhcpd.con contain  
-```        start 192.168.42.2  
+```
+        start 192.168.42.2  
         end 192.168.42.20  
         interface wlan0  
         remaining yes  
@@ -31,12 +32,14 @@ Now, make your raspberry pi has static ip address.
 Type `sudo ipconfig wlan0 192.168.42.1`  
 If you want to make it automatically, you should edit `/etc/network/interfaces`  
 Change your  
-```        allow-hotplug wlan0  
+```
+        allow-hotplug wlan0  
         wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf  
         iface default inet manual  
 ```
 To  
-```        iface wlan0 inet static  
+```
+        iface wlan0 inet static  
         address 192.168.42.1  
         netmask 255.255.255.0  
         #allow-hotplug wlan0  
@@ -46,7 +49,8 @@ To
 ##4.  
 You should edit configuration of hostapd which will make network.  
 Maybe you will make /etc/hostapd/hostapd.conf.  
-```       interface=wlan0  
+```
+        interface=wlan0  
         driver=nl80211  
         ssid=Test_AP  
         hw_mode=g  
