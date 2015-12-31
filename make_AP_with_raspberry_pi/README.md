@@ -12,7 +12,7 @@ you need hostapd and udhcpd
 type `sudo apt-get install hostapd udhcpd -y`  
 ##configure
 you need to configure `/etc/udhcpd.conf`  
-1.  
+##1.  
 you should edit /etc/udhcpd.con contain  
         start 192.168.42.2  
         end 192.168.42.20  
@@ -22,10 +22,10 @@ you should edit /etc/udhcpd.con contain
         opt subnet 255.255.255.0  
         opt router 192.168.42.1  
         opt lease 864000
-2.  
+##2.  
 Edit /etc/default/udhcpd  
 change the line `DHCPD_ENABLED="no"` to `DCHPD_ENABLED="yes"`  
-3.  
+##3.  
 Now, make your raspberry pi has static ip address.  
 Type `sudo ipconfig wlan0 192.168.42.1`  
 If you want to make it automatically, you should edit `/etc/network/interfaces`  
@@ -40,7 +40,7 @@ To
         #allow-hotplug wlan0  
         #wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf  
         #iface default inet manual  
-4.  
+##4.  
 You should edit configuration of hostapd which will make network.  
 Maybe you will make /etc/hostapd/hostapd.conf.  
         interface=wlan0  
@@ -64,7 +64,7 @@ Change the line
         #DAEMON_CONF=""
 To  
         DAEMON_CONF=/etc/hostapd/hostapd.conf  
-5.
+##5.
 Need to configure network address translation.  
 Add `net.ipv4.ip_forward=1` end of `/etc/sysctl.conf`.  
 Type  
@@ -74,7 +74,7 @@ Type
 If you want to make it automatically type  
 `sudo sh -c "iptables-save > /etc/iptables.ipv4.nat"`  
 and add `up iptables-restore < /etc/iptables.ipv4.nat` to `/etc/network/interfaces`  
-6.
+##6.
 It's time to make AP!  
 type  
         sudo service hostapd start  
