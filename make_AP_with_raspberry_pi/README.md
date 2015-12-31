@@ -43,7 +43,7 @@ To
 ##4.  
 You should edit configuration of hostapd which will make network.  
 Maybe you will make /etc/hostapd/hostapd.conf.  
-```        interface=wlan0  
+```     interface=wlan0  
         driver=nl80211  
         ssid=Test_AP  
         hw_mode=g  
@@ -61,7 +61,7 @@ It depends on your WiFi adapter.
 `wpa_passphrase` is password of your AP.  
 And then you should edit /etc/default/hostapd  
 Change the line  
-        #DAEMON_CONF=""
+```        #DAEMON_CONF=""  ```
 To  
         DAEMON_CONF=/etc/hostapd/hostapd.conf  
 ##5.
