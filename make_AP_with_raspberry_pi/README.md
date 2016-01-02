@@ -78,7 +78,7 @@ To
 ```
 ##5.
 Need to configure network address translation.  
-Add `net.ipv4.ip\_forward=1` end of `/etc/sysctl.conf`.  
+Add `net.ipv4.ip_forward=1` end of `/etc/sysctl.conf`.  
 Type  
 ```
         sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE  
