@@ -13,7 +13,7 @@ type `sudo apt-get install hostapd udhcpd -y`
 ##configure
 you need to configure `/etc/udhcpd.conf`  
 ##1.  
-you should edit /etc/udhcpd.con contain  
+you should edit /etc/udhcpd.conf contain  
 ```
         start 192.168.42.2  
         end 192.168.42.20  
@@ -26,7 +26,7 @@ you should edit /etc/udhcpd.con contain
 ```
 ##2.  
 Edit /etc/default/udhcpd  
-change the line `DHCPD\_ENABLED="no"` to `DCHPD\_ENABLED="yes"`  
+change the line `DHCPD_ENABLED="no"` to `DCHPD_ENABLED="yes"`  
 ##3.  
 Now, make your raspberry pi has static ip address.  
 Type `sudo ipconfig wlan0 192.168.42.1`  
@@ -66,7 +66,7 @@ Maybe you will make /etc/hostapd/hostapd.conf.
 ```
 `driver` is your WiFi adapter's driver. If you use realtek your driver should be rtl871xdrv  
 It depends on your WiFi adapter.  
-`wpa\_passphrase` is password of your AP.  
+`wpa_passphrase` is password of your AP.  
 And then you should edit /etc/default/hostapd  
 Change the line  
 ```
