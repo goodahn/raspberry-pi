@@ -1,2 +1,2 @@
 # raspberry-pi
-it's guide of raspberry-pi
+it's guide for raspberry-pi noos
