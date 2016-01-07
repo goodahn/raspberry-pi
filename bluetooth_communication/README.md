@@ -12,7 +12,7 @@ bluetoothctl
 pairable on
 discoverable on
 scan on
-pair #address of your address#  
+pair 00:00:00:00:00:00 <- address of your device
 '''
 
 ##3.bluetooth connection  
