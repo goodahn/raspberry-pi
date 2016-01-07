@@ -13,7 +13,7 @@ discoverable on
 scan on
 pair #address of your address#
 '''
-##.bluetooth connection
+##3.bluetooth connection
 type
 '''
 python bluetooth_rfcomm.py
