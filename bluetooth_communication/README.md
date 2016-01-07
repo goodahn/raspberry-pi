@@ -4,6 +4,7 @@ type
 ```
 sudo apt-get install bluetooth blueman bluez -y
 ```
+
 ##2.pairing device
 type
 ```
@@ -13,6 +14,7 @@ discoverable on
 scan on
 pair #address of your address#  
 '''
+
 ##3.bluetooth connection  
 type  
 '''
