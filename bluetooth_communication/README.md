@@ -13,11 +13,11 @@ pairable on
 discoverable on
 scan on
 pair 00:00:00:00:00:00 <- address of your device
-'''
+```
 
 ##3.bluetooth connection  
 type  
-'''
+```
 python bluetooth_rfcomm.py  
 ```
 Now your raspberry pi open bluetooth server.  
