@@ -11,13 +11,13 @@ bluetoothctl
 pairable on
 discoverable on
 scan on
-pair #address of your address#
+pair #address of your address#  
 '''
-##3.bluetooth connection
-type
+##3.bluetooth connection  
+type  
 '''
-python bluetooth_rfcomm.py
+python bluetooth_rfcomm.py  
 ```
-Now your raspberry pi open bluetooth server.
-
-use bluetooth-client to check bluetooth connection.
+Now your raspberry pi open bluetooth server.  
+  
+use bluetooth-client to check bluetooth connection.  
