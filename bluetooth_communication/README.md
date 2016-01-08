@@ -23,3 +23,9 @@ python bluetooth_rfcomm.py
 Now your raspberry pi open bluetooth server.  
   
 use bluetooth-client to check bluetooth connection.  
+
+#Fix your Error  
+If `bluetooth.btcommon.bluetooth error (2 'no such file or directory')` error occured,  
+type `systemctl status bluetooth`  
+and find line which contains `Loaded: loaded:( path_of_your_bluetooth.service )`  
+Open your bluetooth.service and find line which contains `Exec` and add `--compat`  
