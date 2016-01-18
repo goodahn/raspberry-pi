@@ -37,6 +37,3 @@ amixer cset numid=3 1
 ```
 Now your music is redirected to jack output of raspberry pi.  
 Congratulation!  
-
-
-
