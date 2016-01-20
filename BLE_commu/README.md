@@ -22,7 +22,7 @@ python bluetooth_rfcomm.py
 ```
 Now your raspberry pi open bluetooth server.  
   
-Use android/Test_BLE_RFCOMM to test raspberry pi's server on your android.  
+Use `android/Test_BLE_RFCOMM` to test raspberry pi's server on your android.  
 #Fix your Error  
 If `bluetooth.btcommon.bluetooth error (2 'no such file or directory')` error occured,  
 type `systemctl status bluetooth`  
