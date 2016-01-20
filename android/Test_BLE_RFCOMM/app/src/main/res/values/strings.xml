@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test_BLE_RFCOMM</string>
+    <string name="action_settings">Settings</string>
+    <string name="pickDevice">Select paired device to connect via bluetooth</string>
+    <string name="sendMessage">Write message to send</string>
+    <string name="Loading">Loading...</string>
+</resources>
