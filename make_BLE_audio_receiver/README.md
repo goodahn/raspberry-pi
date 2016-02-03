@@ -10,6 +10,10 @@ If you don't have `/etc/bluetooth/audio.conf` then make it.
 Enable=Source,Media,Socket,Sink  
 ```
 Maybe your audio.conf is like above.    
+And change the line of `/etc/bluetooth/main.conf` which contain  
+`Class = SOME_HEX_VALUE`  
+To
+`Class = 0x20041C`  
 Now edit `/etc/pulse/daemon.conf`. Add the `resample-method=trivial`  
 It's time to reboot!  
 ##Paring and connect your device  
