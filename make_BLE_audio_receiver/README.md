@@ -15,7 +15,7 @@ It's time to reboot!
 ##Paring and connect your device  
 Type  
 ```
-sudo hcitool hci0 piscan  
+sudo hciconfig hci0 piscan  
 bluetoothctl  
 discoverable on  
 pairable on  
