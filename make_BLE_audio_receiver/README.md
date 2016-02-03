@@ -38,6 +38,7 @@ Then type
 ```
 pactl load-module module-loopback source=blue_source.ADDRESS_OF_YOUR_DEVICE sink=alsa_ouput.0.analog-stereo.monitor  
 amixer cset numid=3 1  
+amixer set Master 100%
 ```
 Now your music is redirected to jack output of raspberry pi.  
 Congratulation!  
